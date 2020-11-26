@@ -48,12 +48,12 @@ public class BallMove : MonoBehaviour
     {
      
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGround == true)
-        {
-            rgd.AddForce(Vector3.up * 300f, ForceMode.Force);
-            isGround = false;
+        //if (Input.GetKeyDown(KeyCode.Space) && isGround == true)
+        //{
+        //    rgd.AddForce(Vector3.up * 300f, ForceMode.Force);
+        //    isGround = false;
 
-        }
+        //}
 
 
 
