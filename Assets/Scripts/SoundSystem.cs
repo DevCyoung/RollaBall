@@ -9,6 +9,8 @@ public class SoundSystem : MonoBehaviour
 
     public AudioSource bounce;
     public AudioSource eatItem;
+    public AudioSource clear;
+
 
     //public AudioSource spit;
     //public AudioSource changeColor;
@@ -16,7 +18,7 @@ public class SoundSystem : MonoBehaviour
     //public AudioSource interaction;
     //public AudioSource getHeart;
 
-    
+
 
     public static void Play(AudioSource source)
     {

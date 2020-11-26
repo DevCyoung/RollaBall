@@ -28,7 +28,7 @@ public class Item : MonoBehaviour
     {
         if (other.transform.tag == "Ball")
         {
-
+            SoundSystem.Play(SoundSystem.inst.eatItem);
 
             Destroy(gameObject);
             

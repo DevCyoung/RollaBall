@@ -27,6 +27,19 @@ public class SystemManager : MonoBehaviour
     {
         
     }
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            Debug.Log("누름");
+
+
+            Application.Quit();
+
+
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -50,6 +63,7 @@ public class SystemManager : MonoBehaviour
                 isFinish = true;
 
                 WinText();
+                SoundSystem.Play(SoundSystem.inst.clear);
                 Debug.Log("you win!");
 
             }
@@ -57,13 +71,8 @@ public class SystemManager : MonoBehaviour
 
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
 
-            Application.Quit();
-
-
-        }
+        
 
 
 

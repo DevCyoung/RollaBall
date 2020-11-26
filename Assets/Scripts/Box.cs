@@ -77,7 +77,7 @@ public class Box : MonoBehaviour
         {
             Rigidbody rgd = collision.transform.GetComponent<Rigidbody>();
             rgd.velocity = Vector3.zero;
-
+            SoundSystem.Play(SoundSystem.inst.bounce);
             rgd.AddForce(Vector3.up * power , ForceMode.Impulse);
 
         }
